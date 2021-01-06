@@ -1,0 +1,14 @@
+.rootCont{
+    padding-top: 100px;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.navbar>.active {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+}
+
+.navbar{
+    position: fixed;
+}
