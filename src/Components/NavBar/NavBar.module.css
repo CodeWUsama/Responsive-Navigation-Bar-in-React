@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+.navBarCont {
+    width: 100%;
+    height: 80px;
+    background-color: #121618;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+}
+
+
+.NavLinkPhone {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color:#FFFFFFB3;
+    width: 100%;
+}
+
+.NavLinkPhone:hover {
+    color: #FAC564; 
+    transition: all 400ms ease;
+}
+
+
+.liNav{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom:1px solid #FFFFFFB3;
+    width: 100%;
+}
+
+.navList>.active {
+    color: #FAC564 !important;
+}
+
+.rootCont {
+    width: 100%;
+}
+
+.menuCont {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    position: fixed;
+    background-color: #121618;
+    width: 40%;
+    margin-top: 80px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 500ms ease-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.mobileNavList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-Style-Type: none;
+    height: 250px;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+}
+
+.hamLogo {
+    cursor: pointer;
+}
+
+.navListCont {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.loginLinkCont {
+    margin-right: 3%;
+    display: none;
+}
+
+.hamburgerCont {
+    margin-left: 3%;
+    display: none;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.logoCont {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin-left: 5%;
+}
+
+.logoTextFirst {
+    color: white;
+}
+
+.logoTextLast {
+    color: #FAC564;
+}
+
+.navLink{
+    text-decoration: none;
+    color:#FFFFFFB3;
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.navLink:hover{
+    cursor: pointer;
+    color: #FAC564; 
+    transition: all 400ms ease;
+}
+
+@media(max-width:930px) {
+    .navListCont {
+        display: none;
+    }
+    .loginLinkCont {
+        display: flex;
+    }
+    .hamburgerCont {
+        display: flex;
+    }
+}

@@ -1,16 +1,11 @@
 import './App.css';
-import Navbar from './Components/Navbar';
-import Sec1 from './Components/Sec1';
-import Sec2 from './Components/Sec2';
-import Sec3 from './Components/Sec3';
+import NavBar from "./Components/NavBar/NavBar";
+import LandingPage from './Components/LandingPage/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Sec1 />
-      <Sec2 />
-      <Sec3/>
+      <NavBar />
     </div>
   );
 }
